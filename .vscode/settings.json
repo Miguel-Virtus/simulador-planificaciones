@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "planificador.h": "c",
-        "proceso.h": "c",
-        "cola.h": "c"
-    }
-}
