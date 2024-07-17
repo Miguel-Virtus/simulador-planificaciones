@@ -3,7 +3,7 @@ CFLAGS=-Wall -Wextra -Werror -pedantic -std=c99 -g
 HEADERS=headers/proceso.h headers/planificador.h headers/printer.h headers/conf.h headers/cola.h headers/parser.h headers/dispositivo.h headers/semaforo.h
 OBJ=dispositivo.o cola.o proceso.o planificador.o printer.o parser.o semaforo.o main.o 
 
-EXEC=./main programs/.conf programs/proc1 programs/proc2 programs/proc3
+EXEC=./main programs/.conf programs/proc1 programs/proc2
 
 all: build
 
@@ -27,6 +27,12 @@ plan: test
 	rm ../planificacion.aux ../planificacion.log
 	xdg-open ../planificacion.pdf
 
+
+plan2:
+	./main programsCR/.conf programsCR/proc1 programsCR/proc2
+	pdflatex -output-directory .. ../planificacion.tex 
+	rm ../planificacion.aux ../planificacion.log
+	xdg-open ../planificacion.pdf
 clean:
 	rm -f *.o main ../planificacion.pdf ../planificacion.tex ../planificacion.log ../planificacion.aux vgcore.*
 
