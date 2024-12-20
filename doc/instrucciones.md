@@ -493,6 +493,6 @@ proc3     L  L  L  L  E  E  L  L  L  L  E  T  T  T
 
 Si encuentras cualquier bug en el programa, quieres contribuir a mejorarlo o deseas realizar cualquier otra consulta, no dudes en abrir un Issue en el proyecyo de GitHub.
 
-También puedes contactar conmigo en `miguel.virtus@edu.uah.es`.
+También puedes contactar conmigo en `miguel.virtus@uah.es`.
 
 </div>
